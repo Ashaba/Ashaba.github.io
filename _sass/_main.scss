@@ -1,0 +1,33 @@
+$blue: #428bca;
+$white: #fcfcfc;
+$black: #555;
+
+a {
+  //&:visited { color: $blue; }
+  &:hover { background-color: $white; text-decoration: none; }
+}
+
+body {
+  //font-family: "Verdana", "Bitstream Vera Sans", sans-serif !important;
+  font-family: "Gill Sans", sans-serif !important;
+  color: $black;
+  background-color: $white !important;
+  padding-bottom: 50px;
+}
+
+.site-header {
+  border-bottom: 1px solid #e0e0e0;
+  .navbar {
+    font-variant: all-petite-caps;
+    .navbar-brand {
+      font-size: 28px;
+      font-weight: bold;
+      float: none;
+    }
+  }
+  .navbar-header {
+    a {
+      color: $black;
+    }
+  }
+}
