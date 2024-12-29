@@ -3,7 +3,7 @@ $white: #fcfcfc;
 $black: #555;
 
 a {
-  //&:visited { color: $blue; }
+  &:visited { color: $blue; }
   &:hover { background-color: $white; text-decoration: none; }
 }
 
@@ -29,5 +29,17 @@ body {
     a {
       color: $black;
     }
+  }
+}
+
+.footer {
+  background-color: #fcfcfc !important;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  li {
+    display: inline-block;
+  }
+  .nav-link {
+    color: $blue;
   }
 }
