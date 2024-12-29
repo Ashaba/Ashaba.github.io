@@ -2,4 +2,8 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import "minima";
+@import "bootstrap/bootstrap";
+@import "_main";
+@import "syntax-highlighting";
+@import "bootstrap-icons";
+

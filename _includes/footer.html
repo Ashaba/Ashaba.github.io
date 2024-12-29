@@ -1,35 +1,24 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
-
-  </div>
-
+<footer class="navbar fixed-bottom navbar-light bg-light justify-content-center footer">
+	<ul class="nav">
+		<li class="nav-item">
+			<a class="nav-link" href="mailto:{{ site.email }}">
+				<i class="bi bi-envelope-fill"></i>
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://x.com/johnashabahebwa" target="_blank">
+				<i class="bi bi-twitter-x"></i>
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://github.com/ashaba" target="_blank">
+				<i class="bi bi-github"></i>
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://www.linkedin.com/in/john-ashabahebwa/" target="_blank">
+				<i class="bi bi-linkedin"></i>
+			</a>
+		</li>
+	</ul>
 </footer>
