@@ -1,5 +1,6 @@
 title: John Ashabahebwa
-email: me@johnashabahebwa.com
+#email: me@johnashabahebwa.com
+email: jashaba@live.com
 keywords:
   - john
   - ashaba
@@ -10,8 +11,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   This is Ash - the Software Engineer. You have landed on my site, welcome! You don’t have to over stay.
 baseurl: ""
 url: "https://johnashabahebwa.com"
-twitter_username: johnashabahebwa
-github_username:  ashaba
+x_username: johnashabahebwa
+github_username: ashaba
+linkedin_username: john-ashabahebwa
 
 plugins:
   - jekyll-feed
