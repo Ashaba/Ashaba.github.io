@@ -1,6 +1,7 @@
 $blue: #428bca;
 $white: #fcfcfc;
 $black: #555;
+$gray: #777;
 
 a {
   &:visited {
@@ -39,5 +40,29 @@ body {
   }
   .nav-link {
     color: $blue;
+  }
+}
+
+#intro {
+  a , p { color: $gray; }
+  img {
+    background-color: white;
+    //border: 3px solid #1d6298;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  }
+  p {
+    font-size: 0.9em;
+    line-height: 1.1em;
+  }
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #intro {
+    text-align: left;
+    display: table;
+    div {
+      height: 180px; display: table-cell !important; position: absolute; top: 50%; margin-top: -120px;
+    }
   }
 }
