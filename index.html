@@ -6,7 +6,14 @@ layout: default
 <div class="container text-center py-5">
 	<div class="row justify-content-center">
 		<div class="col-md-8 col-lg-6">
-			<img src="/assets/images/real-ash.png" class="img-fluid rounded-circle mb-4" alt="ash" style="max-width: 250px"/>
+			<img 
+				src="/assets/images/real-ash.png" 
+				class="img-fluid rounded-circle mb-4" 
+				alt="ash" 
+				loading="lazy"
+				style="max-width: 250px"
+				onload="this.classList.add('loaded')"
+			/>
 			<div class="greeting-text">
 				<h1 class="display-4 mb-3">Hi there 👋</h1>
 				<p class="lead">From grazing goats and cattle in Uganda to writing software in Austin, Texas — This is Ash!</p>
