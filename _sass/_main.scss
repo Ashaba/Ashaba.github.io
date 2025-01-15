@@ -1,7 +1,10 @@
 $blue: #428bca;
-$white: #fcfcfc;
-$black: #555;
-$gray: #777;
+$white: #fafafa;
+$black: #333333;
+$gray: #666666;
+
+$font-primary: Verdana, "Liberation Sans", "Helvetica Neue", Arial, sans-serif;
+$font-headers: "Segoe UI", Verdana, "Helvetica Neue", Arial, sans-serif;
 
 a {
   &:visited {
@@ -11,10 +14,11 @@ a {
 }
 
 body {
-  //font-family: "Verdana", "Bitstream Vera Sans", sans-serif !important;
-  font-family: "Gill Sans", sans-serif !important;
+  font-family: $font-primary !important;
+  font-size: 0.875rem;
   color: $black;
-  background-color: $white !important;
+  background-color: $white;
+  line-height: 1.5;
   padding-bottom: 50px;
 }
 
@@ -64,5 +68,135 @@ body {
     div {
       height: 180px; display: table-cell !important; position: absolute; top: 50%; margin-top: -120px;
     }
+  }
+}
+
+.profile-section {
+  padding: 2rem 0;
+  
+  h1 {
+    color: $black;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    font-family: $font-headers;
+    letter-spacing: normal;
+    font-size: 1.25rem;
+  }
+  
+  h2 {
+    color: $black;
+    font-size: 1.125rem;
+    margin: 1.25rem 0 0.875rem;
+    font-family: $font-headers;
+    letter-spacing: normal;
+  }
+  
+  .resume-section, .background-section {
+    margin-bottom: 3rem;
+    
+    .content-block {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+      
+      h2 {
+        color: $black;
+        font-size: 1.125rem;
+        font-family: $font-headers;
+        position: relative;
+        margin: 0;
+        
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0.5rem;
+          right: -1rem;
+          width: 2px;
+          height: 1rem;
+          background-color: $blue;
+        }
+      }
+      
+      .content {
+        p {
+          font-size: 0.875rem;
+          line-height: 1.7;
+          color: $gray;
+          margin-bottom: 1rem;
+          
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  
+  .resume-link {
+    color: $blue;
+    text-decoration: none;
+    border-bottom: 1px dotted $blue;
+    padding-bottom: 2px;
+    
+    &:hover {
+      color: darken($blue, 15%);
+      border-bottom-style: solid;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-section {
+    margin: 1rem auto;
+    padding: 0 1rem;
+    .resume-section, .background-section {
+      .content-block {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        
+        h2:after {
+          top: auto;
+          bottom: -0.5rem;
+          right: auto;
+          left: 0;
+          width: 2rem;
+          height: 2px;
+        }
+      }
+    }
+  }
+}
+
+.resume-page {
+  // Add any resume-specific styles here
+}
+
+.display-4 {
+  font-family: $font-headers !important;
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+}
+
+.lead {
+  font-family: $font-primary !important;
+  font-size: 0.875rem !important;
+  font-weight: normal !important;
+  line-height: 1.5 !important;
+}
+
+.greeting-text {
+  h1, h2, h3 {
+    font-family: $font-headers !important;
+    font-size: 1.25rem !important;
+  }
+  
+  p {
+    font-family: $font-primary !important;
+    font-size: 0.875rem !important;
   }
 }
