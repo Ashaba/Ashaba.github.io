@@ -2,19 +2,32 @@ title: John Ashabahebwa
 #email: me@johnashabahebwa.com
 email: jashaba@live.com
 keywords:
-  - john
-  - ashaba
-  - ashabahebwa
-  - ash
-  - software
+  - john ashaba
+  - john ashabahebwa
+  - software engineer
+  - software developer
+  - web development
+  - technology
+  - programming
 description: >- # this means to ignore newlines until "baseurl:"
-  This is Ash - the Software Engineer. You have landed on my site, welcome! You don’t have to over stay.
+  John Ashabahebwa is a software engineer specializing in web development 
+  and technology solutions. Explore my portfolio and professional experience.
+author:
+  name: John Ashabahebwa
+  twitter: johnashabahebwa
+  image: /path/to/your/profile-image.jpg  # Add a professional photo
 baseurl: ""
 url: "https://johnashabahebwa.com"
 x_username: johnashabahebwa
 github_username: ashaba
 linkedin_username: john-ashabahebwa
 
+# SEO Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap  # Add this plugin
+
+# Security and Performance
+ssl: true
+enforce_ssl: johnashabahebwa.com
