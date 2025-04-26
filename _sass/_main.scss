@@ -66,3 +66,51 @@ body {
     }
   }
 }
+
+#profile-page , .blog-container, .races-container {
+  div.left p , div.right .details {
+    color: $gray;
+    font-style: italic;
+  }
+  div.row {
+    margin: 2em 0;
+  }
+  div.left {
+    text-align: right;
+    h3 {
+      margin-top: 0;
+      a {
+        & , &:visited { color: $black; }
+        &:hover { color: $gray; }
+      }
+    }
+  }
+  div.right {
+    .details {
+      margin-top: 2em;
+    }
+    img {
+      margin: 10px 0;
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+    word-wrap:break-word;
+    color: $gray;
+    //padding-top: 24px;
+    text-align: left;
+    a.edit {
+      display: none;
+    }
+    &:hover a.edit {
+      display: inline-block;
+    }
+    p {
+      line-height: 1.8em;
+    }
+  }
+  hr {
+    color: $gray;
+    margin: 20px 40%;
+  }
+}
