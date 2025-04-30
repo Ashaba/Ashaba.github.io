@@ -31,3 +31,11 @@ plugins:
 # Security and Performance
 ssl: true
 enforce_ssl: johnashabahebwa.com
+
+collections:
+  posts:
+    output: true
+    permalink: "/blog/:title"
+  projects:
+    output: true
+    permalink: "/projects/:name"

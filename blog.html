@@ -1,5 +1,35 @@
 ---
-layout: page
+layout: default
 title: Blog
 permalink: /blog
 ---
+
+<div class="container-fluid">
+	<div class="row">
+
+		<div class="col-md-3 border-end">
+			<h4 class="mt-3">Blog Posts</h4>
+			<ul class="list-group">
+				{% for post in site.posts %}
+				<li class="list-group-item">
+					<a href="/blog#{{ post.slug }}" class="blog-link">{{ post.title }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+
+		<div class="col-md-9 mt-3" id="block-content">
+			{% for post in site.posts %}
+			<div class="blog-post" id="{{ post.slug }}" style="display: none;">
+				<h2>{{ post.title }}</h2>
+				<p class="text-muted">{{ post.date | date: "%B %-d, %Y" }}</p>
+				{{ post.content }}
+
+				<p>
+					<a href="{{ post.url }}" class="btn btn-sm btn-outline-primary mt-3">Open Full Page &rarr;</a>
+				</p>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
