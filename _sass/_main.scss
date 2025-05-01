@@ -72,7 +72,7 @@ body {
   }
 }
 
-#profile-page , .blog-container {
+#profile-page , .blog-container, .projects-container {
   a {
     text-decoration: none;
     &:visited { color: $blue; }
