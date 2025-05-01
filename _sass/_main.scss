@@ -76,7 +76,7 @@ body {
   a {
     text-decoration: none;
     &:visited { color: $blue; }
-    &:hover { background-color: $white; text-decoration: none; color: $gray }
+    &:hover { background-color: $white; text-decoration: none; color: $gray; }
   }
   ul {
     list-style: none;
