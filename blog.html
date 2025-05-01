@@ -4,15 +4,15 @@ title: Blog
 permalink: /blog
 ---
 
-<div class="container-fluid">
+<div class="container-fluid blog-container">
 	<div class="row">
 
 		<div class="col-md-3 border-end">
-			<h4 class="mt-3">Blog Posts</h4>
 			<ul class="list-group">
 				{% for post in site.posts %}
 				<li class="list-group-item">
 					<a href="/blog#{{ post.slug }}" class="blog-link">{{ post.title }}</a>
+					<p class="date"> <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %-d, %Y" }}</time></p>
 				</li>
 				{% endfor %}
 			</ul>
@@ -22,7 +22,7 @@ permalink: /blog
 			{% for post in site.posts %}
 			<div class="blog-post" id="{{ post.slug }}" style="display: none;">
 				<h2>{{ post.title }}</h2>
-				<p class="text-muted">{{ post.date | date: "%B %-d, %Y" }}</p>
+<!--				<p class="text-muted">{{ post.date | date: "%B %-d, %Y" }}</p>-->
 				{{ post.content }}
 
 				<p>
