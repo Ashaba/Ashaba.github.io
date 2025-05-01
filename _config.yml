@@ -38,4 +38,4 @@ collections:
     permalink: "/blog/:title"
   projects:
     output: true
-    permalink: "/projects/:name"
+    permalink: "/project/:title"
