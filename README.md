@@ -1,6 +1,7 @@
 # John Ashabahebwa
 
-Welcome to my little corner of the internet! Glad you're here.
+Well, look who dug into the repo! This is where my personal site lives — guessing you're curious about what it's built 
+with. It's running on Jekyll, Bootstrap v5.3.3, and about 10 lines of JavaScript. That’s it.
 
 ## Installation
 
