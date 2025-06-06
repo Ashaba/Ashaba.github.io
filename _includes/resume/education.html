@@ -1,0 +1,13 @@
+<hr />
+<section class="mb-4">
+	<h2 class="h4">Education</h2>
+	{% for edu in site.data.resume.education %}
+	<div class="mb-3">
+		<h5>{{ edu.degree }}</h5>
+		<small class="text-muted">
+			{{ edu.institution }} – {{ edu.location }} <br>
+			{{ edu.start | date: "%Y" }} – {{ edu.end | date: "%Y" }}
+		</small>
+	</div>
+	{% endfor %}
+</section>

@@ -1,0 +1,19 @@
+<hr />
+<section class="mb-4">
+	<h2 class="h4">Experience</h2>
+	{% for experience in site.data.resume.experience %}
+	<div class="mb-4">
+		<h5>{{ experience.title }}, {{ experience.company }}</h5>
+		<small class="text-muted">
+			{{ experience.location }} ·
+			{{ experience.start | date: "%b %Y" }} –
+			{{ experience.end | date: "%b %Y" | default: "Present" }}
+		</small>
+		<ul class="mt-2">
+			{% for bullet in experience.responsibilities %}
+			<li>{{ bullet }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+	{% endfor %}
+</section>

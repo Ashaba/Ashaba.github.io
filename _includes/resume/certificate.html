@@ -1,0 +1,11 @@
+<hr />
+<section class="mb-4">
+	<h2 class="h4">Certificates</h2>
+	<ul>
+		{% for cert in site.data.resume.certificate %}
+		<li>
+			{{ cert.name }} – {{ cert.provider }} ({{ cert.date | date: "%b %Y" }})
+		</li>
+		{% endfor %}
+	</ul>
+</section>

@@ -1,0 +1,19 @@
+<hr />
+<section class="mb-4">
+	<h2 class="h4">Skills</h2>
+	{% for section in site.data.resume.skills %}
+	<div class="mb-3">
+		<h5 class="fw-medium">{{ section.section }}</h5>
+		<ul class="mb-2">
+			{% for skill in section.skills %}
+			<li>
+				{{ skill.name }}
+				{% if skill.start %}
+				— {{ site.time | date: "%Y" | minus: skill.start }}yrs
+				{% endif %}
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+	{% endfor %}
+</section>
