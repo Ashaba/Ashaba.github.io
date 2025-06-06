@@ -1,0 +1,42 @@
+- title: Software Engineer III
+  company: Expedia Group
+  location: Austin, TX
+  start: 2024-03-01
+  end:
+  responsibilities:
+    - Designed and developed a Webhooks Platform using Java/Kotlin Spring Boot.
+    - Implemented Secret Expiry Notification Service to notify partners of upcoming credential expirations and support automated renewal flows.
+
+- title: Software Engineer
+  company: Vibes Media
+  location: Chicago, IL
+  start: 2018-07-01
+  end: 2024-03-01
+  responsibilities:
+    - Built a callback service for message delivery status to support actionable insights for API-triggered campaigns.
+    - Created a data migration tool using Quarkus, Hibernate, Kafka, and Java to reduce onboarding time from days to clicks.
+    - Introduced ecommerce tag tracking in the push platform during a hackathon, later merged into production.
+    - Led development of a React Native sales engagement mobile app using push SDK, onboarding 3 partners within a month.
+    - Improved Android SDK by enhancing Firebase Cloud Messaging logging and increasing test coverage to 84%.
+    - Added integration plugins for React Native and Ionic to expand SDK usability beyond native Android.
+
+- title: Software Engineer
+  company: Andela
+  location: Nairobi, Kenya
+  start: 2017-08-01
+  end: 2018-08-01
+  responsibilities:
+    - Maintained and scaled backend systems for the Learning Map platform using Python/Flask.
+    - Mentored junior developers and facilitated developer growth tracking.
+    - Launched and ran Teencode Africa, offering coding mentorship to teenagers.
+
+- title: Software Engineer
+  company: Ministry of Water & Environment
+  location: Entebbe, Uganda
+  start: 2016-03-01
+  end: 2017-08-01
+  responsibilities:
+    - Led backend development of the Integrated National Water Quality Management System using Django REST Framework.
+    - Built and maintained a companion Android mobile app for field data collection.
+    - Configured Linux-based hosting infrastructure using nginx for web serving and load balancing.
+    - Migrated legacy geospatial data into the new system.

@@ -1,0 +1,7 @@
+- name: AI Programming in Python
+  provider: Udacity
+  date: 2020-04-01
+
+- name: Intermediate Machine Learning
+  provider: Kaggle
+  date: 2019-10-01

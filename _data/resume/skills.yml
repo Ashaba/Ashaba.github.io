@@ -1,0 +1,36 @@
+- section: "Backend Platforms & Languages"
+  skills:
+    - name: "JVM (Java, Kotlin, Groovy, Spring Boot, Quarkus)"
+#      start: 2019 - ### I thought I could add the start date but this may be useless at least for now. I know what to do
+    - name: "Python (Django, Flask, DRF)"
+    - name: "Ruby (Rails)"
+    - name: "Node.js"
+    - name: "GraphQL"
+
+- section: "Mobile"
+  skills:
+    - name: "Android SDK (Java/Kotlin)"
+    - name: "React Native"
+    - name: "Ionic"
+
+- section: "Frontend"
+  skills:
+    - name: "React, Angular"
+    - name: "HTML, CSS, JavaScript"
+
+- section: "Data & Messaging"
+  skills:
+    - name: "PostgreSQL, MySQL, SQLite"
+    - name: "Redis, Snowflake"
+    - name: "Apache Kafka, RabbitMQ"
+    - name: "AWS (Kinesis, SQS)"
+
+- section: "Infrastructure & DevOps"
+  skills:
+    - name: "Cloud - AWS (ECS, EC2, CloudWatch, Secrets Manager, ECR, EKS), Heroku, Digital Ocean"
+    - name: "Git, GitHub, GitLab, CircleCI, Bitrise, Docker, Kubernetes, Terraform, Maven, Gradle, Chef"
+
+- section: "Testing & Code Quality"
+  skills:
+    - name: "JUnit, Mockito, MockMvc, RestAssured, Robolectric, RSpec, Pytest"
+    - name: "SonarQube, PMD, Checkstyle, FindBugs"
