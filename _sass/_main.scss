@@ -75,6 +75,7 @@ body {
 #profile-page , .blog-container, .projects-container {
   a {
     text-decoration: none;
+    color: $blue;
     &:visited { color: $blue; }
     &:hover { background-color: $white; text-decoration: none; color: $gray; }
   }
