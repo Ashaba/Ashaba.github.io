@@ -2,35 +2,34 @@
 layout: default
 title: Projects
 permalink: /projects
+description: "Projects I've built to learn, explore, and create solutions."
 ---
 
-<div class="container-fluid projects-container">
-	<div class="row">
+<div class="container projects-container my-5">
 
-		<div class="col-md-3 border-end">
-			<ul class="list-group">
-				{% for project in site.projects %}
-				<li class="list-group-item">
-					<a href="/blog#{{ project.slug }}" class="blog-link">{{ project.title }}</a>
-					<p class="date"> <time datetime="{{ project.date | date_to_xmlschema }}" itemprop="datePublished">{{ project.date | date: "%B %-d, %Y" }}</time></p>
-				</li>
-				{% endfor %}
-			</ul>
+	{% assign featured_projects = site.projects | where: "featured", true %}
+	{% if featured_projects.size > 0 %}
+
+	<div class="row mb-5">
+		{% for project in featured_projects %}
+		<div class="col-md-6">
+			{% include projects/featured.html project=project %}
 		</div>
-
-		<div class="col-md-9 mt-3" id="block-content">
-			{% for project in site.projects %}
-			<div class="blog-post" id="{{ project.slug }}" style="display: none;">
-				<h2>{{ project.title }}</h2>
-				<!--				<p class="text-muted">{{ post.date | date: "%B %-d, %Y" }}</p>-->
-				{{ project.content }}
-
-				<p>
-					<a href="{{ project.url }}" class="btn btn-sm btn-outline-primary mt-3">Open Full Page &rarr;</a>
-				</p>
-			</div>
-			{% endfor %}
-		</div>
+		{% endfor %}
 	</div>
-</div>
+	{% endif %}
 
+	<div style="height: 4px; background-color: #007bff; width: 50px; margin: 20px auto;"></div>
+
+	<h3 class="mt-5 mb-4">All</h3>
+
+	<div class="row">
+		{% assign nonfeatured_projects = site.projects %}
+		{% for project in nonfeatured_projects %}
+		<div class="col-md-4">
+			{% include projects/thumbnail.html project=project %}
+		</div>
+		{% endfor %}
+	</div>
+
+</div>

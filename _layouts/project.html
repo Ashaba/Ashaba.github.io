@@ -2,16 +2,14 @@
 layout: default
 ---
 
-<div class="row">
-	<header class="post-header">
-		<div class="row project-feature bottom-buffer" id="feature-{{ page.slug }}">
-			<div class="col-md-10 col-md-offset-1">
-				<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+<div class="container m-lg-5">
+	<div class="card shadow-none">
+		<div class="card-body">
+			<h1 class="card-title">{{ page.title }}</h1>
+			<p class="text-muted">{{ page.date | date: "%B %-d, %Y" }}</p>
+			<div class="card-text">
+				{{ page.content }}
 			</div>
 		</div>
-	</header>
-
-	<div class="post-content" itemprop="articleBody" style="text-align:center">
-		{{ page.content }}
 	</div>
 </div>

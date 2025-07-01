@@ -1,0 +1,18 @@
+<div class="card mb-4 h-100 text-center p-3">
+	<a href="{{ project.url }}">
+		<div class="mx-auto mb-2">
+			{% if project.image %}
+			<img src="/assets/images/{{ project.image }}" class="img-fluid rounded-circle shadow-sm" style="width:80px; height:80px; object-fit:cover;" alt="{{ project.title }}">
+			{% else %}
+			<div class="bg-secondary text-white d-flex align-items-center justify-content-center rounded-circle shadow-sm" style="width:80px; height:80px;">
+				<span>No Image</span>
+			</div>
+			{% endif %}
+		</div>
+	</a>
+	<div class="card-body">
+		<h5 class="card-title">{{ project.title }}</h5>
+		<p class="card-text">{{ project.caption }}</p>
+		<a href="{{ project.url }}" class="btn btn-outline-primary btn-sm">View Details</a>
+	</div>
+</div>
