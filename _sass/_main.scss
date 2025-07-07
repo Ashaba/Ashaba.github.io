@@ -20,7 +20,13 @@ body {
   font-family: "Gill Sans", sans-serif !important;
   color: $black;
   background-color: $white !important;
-  padding-bottom: 50px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
 }
 
 .site-header {
@@ -45,6 +51,11 @@ body {
   }
   .nav-link {
     color: $blue;
+    &:hover {
+      color: $gray;
+      transform: translateY(-2px);
+      transition: all 0.3s ease;
+    }
   }
 }
 
