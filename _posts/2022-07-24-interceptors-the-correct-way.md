@@ -21,13 +21,14 @@ class CustomRequestInterceptor : ClientHttpRequestInterceptor {
         var response: ClientHttpResponse? = null
         try {
             response = execution.execute(request, body)
+            return resonse
         } catch (e: Exception) {
             e.printStackTrace()
+            throw e
         } finally {
             logRequest(request, response)
             logResponse(response)
         }
-        return response!!
     }
 }
 ```
@@ -86,15 +87,15 @@ override fun intercept(
 
     try {
         response = execution.execute(request, body)
+        return response
     } catch (e: Exception) {
         exception = e
         e.printStackTrace()
+        throw e
     } finally {
         logRequest(request, response)
         logResponse(response, exception)
     }
-
-    return response!!
 }
 ```
 
