@@ -9,6 +9,8 @@ especially when using `RestTemplate`. The standard approach involves configuring
 [RestTemplate](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html) 
 bean and plugging in a custom [ClientHttpRequestInterceptor](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/http/client/ClientHttpRequestInterceptor.html).
 
+<img src="/assets/images/projects/rest-template-interceptor.png" alt="RestTemplate Interceptor Flow" class="img-fluid">
+
 You might start with an interceptor like this:
 
 ```kotlin
@@ -75,6 +77,7 @@ This means:
 ##### How to Handle This Properly
 
 To robustly log request/response activity, even when read timeouts or IO errors occur, you need to wrap access to the response in its own `try/catch`.
+
 Here's a refined version of the `intercept` method:
 ```kotlin
 override fun intercept(
