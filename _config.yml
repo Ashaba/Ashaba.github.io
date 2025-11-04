@@ -31,6 +31,15 @@ plugins:
 ssl: true
 enforce_ssl: johnashabahebwa.com
 
+# Analytics
+# Google Analytics 4 - Get your Measurement ID from https://analytics.google.com/
+# Format: G-XXXXXXXXXX
+google_analytics: # Add your GA4 Measurement ID here
+
+# Plausible Analytics - Free, privacy-focused alternative
+# Sign up at https://plausible.io/ or self-host
+plausible_domain: # Add your domain here (e.g., johnashabahebwa.com)
+
 collections:
   posts:
     output: true
