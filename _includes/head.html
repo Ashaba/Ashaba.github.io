@@ -15,7 +15,7 @@
 	<!-- Favicon -->
 	<link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
     <!-- Security headers -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://plausible.io; connect-src 'self' https://www.google-analytics.com https://plausible.io; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
@@ -24,6 +24,9 @@
     {%- feed_meta -%}
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
         {%- include google-analytics.html -%}
+    {%- endif -%}
+    {%- if jekyll.environment == 'production' and site.plausible_domain -%}
+        {%- include plausible-analytics.html -%}
     {%- endif -%}
 
 </head>

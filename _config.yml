@@ -31,6 +31,9 @@ plugins:
 ssl: true
 enforce_ssl: johnashabahebwa.com
 
+# Analytics
+google_analytics: # Will be injected during build time
+
 collections:
   posts:
     output: true
