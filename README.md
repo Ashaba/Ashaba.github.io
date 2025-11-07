@@ -1,9 +1,10 @@
 # John Ashabahebwa
 
-Well, look who dug into the repo! This is where my personal site lives — guessing you're curious about what it's built 
-with. It's running on Jekyll, Bootstrap v5.3.3, and about 10 lines of JavaScript. That’s it.
+Welcome to the repository for my website / portfolio. In case you're curious about the technologies behind it, 
+it's running on Jekyll, Bootstrap v5.3.3, and about 10 lines of JavaScript. That’s it.
 
 ## Installation
+If you want to run this locally, you can do so by cloning the repository and running the following commands:
 
 ```
 $ git clone ...
