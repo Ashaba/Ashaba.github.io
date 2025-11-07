@@ -1,5 +1,5 @@
 title: John Ashabahebwa
-email: me@johnashabahebwa.com
+email: john@ashabahebwa.com
 keywords:
   - john ashaba
   - john ashabahebwa
@@ -16,7 +16,7 @@ author:
   twitter: johnashabahebwa
   image: /path/to/your/profile-image.jpg  # Add a professional photo
 baseurl: ""
-url: "https://johnashabahebwa.com"
+url: "https://ashabahebwa.com"
 x_username: johnashabahebwa
 github_username: ashaba
 linkedin_username: john-ashabahebwa
@@ -29,7 +29,7 @@ plugins:
 
 # Security and Performance
 ssl: true
-enforce_ssl: johnashabahebwa.com
+enforce_ssl: ashabahebwa.com
 
 # Analytics
 google_analytics: # Will be injected during build time
