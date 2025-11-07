@@ -9,7 +9,8 @@ name: Deploy Jekyll site to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches:
+      - main
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -44,10 +45,15 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
-        # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+          GOOGLE_ANALYTICS_ID: ${{ secrets.GA_MEASUREMENT_ID }}
+        # Outputs to the './_site' directory by default
+        run: |
+          if [ -n "$GOOGLE_ANALYTICS_ID" ]; then
+            sed -i "s|google_analytics:.*|google_analytics: $GOOGLE_ANALYTICS_ID|" _config.yml
+          fi
+          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
