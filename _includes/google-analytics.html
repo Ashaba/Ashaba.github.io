@@ -1,11 +1,4 @@
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-<script>
-  if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '{{ site.google_analytics }}');
-  }
-</script>
-  
+<!-- Google Analytics 4 — initialized by assets/js/analytics.js -->
+<meta name="ga-measurement-id" content="{{ site.google_analytics }}">
+<script src="{{ '/assets/js/analytics.js' | relative_url }}" defer></script>
+

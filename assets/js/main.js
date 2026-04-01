@@ -24,3 +24,16 @@ function handleHashChange() {
 
 window.addEventListener("DOMContentLoaded", handleHashChange);
 window.addEventListener("hashchange", handleHashChange);
+
+// Profile image load animation (replaces inline onload handler)
+window.addEventListener("DOMContentLoaded", function () {
+    var profileImg = document.querySelector('img[data-role="profile"]');
+    if (!profileImg) return;
+    if (profileImg.complete) {
+        profileImg.classList.add("loaded");
+    } else {
+        profileImg.addEventListener("load", function () {
+            profileImg.classList.add("loaded");
+        });
+    }
+});
