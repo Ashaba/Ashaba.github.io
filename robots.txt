@@ -1,5 +1,3 @@
 User-agent: *
 Allow: /
 Sitemap: https://ashabahebwa.com/sitemap.xml
-Disallow: /private/
-Disallow: /admin/ 
